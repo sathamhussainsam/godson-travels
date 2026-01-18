@@ -1,109 +1,66 @@
-# Godson Travels Website
+# Images Directory
 
-A complete travel agency website built with HTML, CSS, and JavaScript. Features package management, booking system, and admin panel.
+This directory contains images for the travel packages organized by destination.
 
-## Features
-
-- **Package Management**: View and manage travel packages for Kodaikanal, Munnar, and Ooty
-- **Package Types**: Couples, Honeymoon, College IV, and more
-- **CRUD Operations**: Full Create, Read, Update, Delete functionality for packages
-- **Booking System**: Track monthly bookings with status management
-- **Contact Integration**: Direct phone (9751764713) and email (godsontravels@outlook.com) links
-- **Image Gallery**: Beautiful image galleries for each package
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
-
-## Project Structure
+## Directory Structure
 
 ```
-GODSON/
-├── index.html              # Home page with package listings
-├── package-detail.html     # Individual package detail page
-├── admin.html              # Admin panel for CRUD operations
-├── bookings.html           # Monthly booked details view
-├── css/
-│   ├── style.css          # Main stylesheet
-│   ├── admin.css          # Admin panel styles
-│   └── responsive.css     # Responsive design
-├── js/
-│   ├── storage.js         # LocalStorage utilities
-│   ├── app.js             # Main application logic
-│   ├── admin.js           # Admin CRUD operations
-│   ├── bookings.js        # Booking management
-│   └── init-data.js       # Sample data initialization
-└── images/
-    ├── kodaikanal/        # Kodaikanal destination images
-    ├── munnar/            # Munnar destination images
-    └── ooty/              # Ooty destination images
+images/
+├── kodaikanal/     # Images for Kodaikanal packages
+├── munnar/         # Images for Munnar packages
+└── ooty/           # Images for Ooty packages
 ```
-
-## Getting Started
-
-1. **Open the website**: Simply open `index.html` in your web browser
-2. **Initial Data**: The website will automatically load sample packages on first visit
-3. **Admin Access**: Click on "Admin" in the navigation menu
-   - Default password: `admin123` or `admin`
 
 ## Adding Images
 
-1. Place your images in the appropriate destination folder:
-   - `images/kodaikanal/` for Kodaikanal packages
-   - `images/munnar/` for Munnar packages
-   - `images/ooty/` for Ooty packages
+To add images to your packages:
 
-2. When creating or editing a package in the Admin panel, enter image paths in the "Image Paths" field:
-   - One path per line
-   - Relative to the website root
-   - Example: `images/kodaikanal/lake.jpg`
+1. Place your images in the appropriate destination folder (kodaikanal, munnar, or ooty)
+2. When creating or editing a package in the Admin panel, enter the image paths in the "Image Paths" field
+3. Use one path per line, relative to the website root
+4. Example paths:
+   - `images/kodaikanal/myimage1.jpg`
+   - `images/munnar/myimage2.jpg`
+   - `images/ooty/myimage3.jpg`
 
-3. Add a default image at `images/default.jpg` (800x600px recommended) to show when images fail to load
+## Image Guidelines
 
-## Admin Panel Features
+- Recommended format: JPG or PNG
+- Recommended size: 1200x800 pixels or larger
+- File names: Use descriptive names (e.g., `kodaikanal-lake.jpg`)
+- First image in the list will be used as the package thumbnail on the home page
 
-- **Add Packages**: Create new travel packages with all details
-- **Edit Packages**: Update existing package information
-- **Delete Packages**: Remove packages with confirmation
-- **Export Data**: Download all packages and bookings as JSON
-- **Import Data**: Restore data from previously exported JSON file
+## Default Image
 
-## Booking System
+If an image fails to load, a default placeholder image will be displayed. You can replace `images/default.jpg` with your own default image.
 
-- Bookings are created when users click "Book Now" on package details
-- Booking information is sent via email using mailto: links
-- View all bookings on the Bookings page
-- Filter bookings by month
-- Update booking status (Pending, Confirmed, Cancelled)
-- Export bookings as CSV
+## Sample Image Paths
 
-## Contact Information
+The sample packages reference these images (add your own images with these names or update the package data):
 
-- **Phone**: 9751764713 (click-to-call)
-- **Email**: godsontravels@outlook.com
+### Kodaikanal
+- `images/kodaikanal/kodaikanal1.jpg`
+- `images/kodaikanal/kodaikanal2.jpg`
+- `images/kodaikanal/kodaikanal3.jpg`
+- `images/kodaikanal/kodaikanal4.jpg`
+- `images/kodaikanal/kodaikanal5.jpg`
+- `images/kodaikanal/kodaikanal6.jpg`
+- `images/kodaikanal/kodaikanal7.jpg`
+- `images/kodaikanal/kodaikanal8.jpg`
 
-## Data Storage
+### Munnar
+- `images/munnar/munnar1.jpg`
+- `images/munnar/munnar2.jpg`
+- `images/munnar/munnar3.jpg`
+- `images/munnar/munnar4.jpg`
+- `images/munnar/munnar5.jpg`
 
-All data is stored in the browser's LocalStorage:
-- Packages are stored under the `packages` key
-- Bookings are stored under the `bookings` key
-- Data persists across browser sessions on the same device
-
-## Browser Compatibility
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-## Notes
-
-- This is a client-side only application (no backend server required)
-- Data is stored locally in your browser
-- To clear all data, use browser's developer tools to clear LocalStorage
-- Images should be optimized for web (JPG or PNG format)
-
-## Future Enhancements
-
-- User authentication system
-- Backend API integration
-- Payment gateway integration
-- Email notifications via backend service
-- SMS notifications via API
+### Ooty
+- `images/ooty/ooty1.jpg`
+- `images/ooty/ooty2.jpg`
+- `images/ooty/ooty3.jpg`
+- `images/ooty/ooty4.jpg`
+- `images/ooty/ooty5.jpg`
+- `images/ooty/ooty6.jpg`
+- `images/ooty/ooty7.jpg`
+- `images/ooty/ooty8.jpg`
