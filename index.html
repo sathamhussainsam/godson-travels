@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godson Travels - Your Perfect Travel Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🌴 Godson Travels</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-contact">
+                <a href="tel:9751764713" class="contact-link">📞 9751764713</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore Beautiful Destinations</h1>
+            <p>Discover amazing travel packages for Kodaikanal, Munnar, and Ooty</p>
+            <div class="hero-destinations">
+                <span class="dest-tag">Kodaikanal</span>
+                <span class="dest-tag">Munnar</span>
+                <span class="dest-tag">Ooty</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="Couples">Couples</button>
+                <button class="filter-btn" data-filter="Honeymoon">Honeymoon</button>
+                <button class="filter-btn" data-filter="College IV">College IV</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search packages by name, destination...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Our Travel Packages</h2>
+            <div id="packages-container" class="packages-grid">
+                <!-- Packages will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <a href="tel:9751764713">9751764713</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <a href="mailto:godsontravels@outlook.com">godsontravels@outlook.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Godson Travels. All rights reserved.</p>
+            <p>Contact: <a href="tel:9751764713">9751764713</a> | <a href="mailto:godsontravels@outlook.com">godsontravels@outlook.com</a></p>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/init-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
