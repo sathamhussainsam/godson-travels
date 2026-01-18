@@ -24,6 +24,16 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
+    /* Beautiful subtle geometric pattern background */
+    background-image:
+        linear-gradient(30deg, #f0f7ff 12%, transparent 12.5%, transparent 87%, #f0f7ff 87.5%, #f0f7ff),
+        linear-gradient(150deg, #f0f7ff 12%, transparent 12.5%, transparent 87%, #f0f7ff 87.5%, #f0f7ff),
+        linear-gradient(30deg, #f0f7ff 12%, transparent 12.5%, transparent 87%, #f0f7ff 87.5%, #f0f7ff),
+        linear-gradient(150deg, #f0f7ff 12%, transparent 12.5%, transparent 87%, #f0f7ff 87.5%, #f0f7ff),
+        linear-gradient(60deg, #e8f4f8 25%, transparent 25.5%, transparent 75%, #e8f4f8 75%, #e8f4f8),
+        linear-gradient(60deg, #e8f4f8 25%, transparent 25.5%, transparent 75%, #e8f4f8 75%, #e8f4f8);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
 .container {
@@ -79,10 +89,16 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-image:
+        linear-gradient(135deg, rgba(37, 99, 235, 0.85) 0%, rgba(16, 185, 129, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -108,6 +124,64 @@ body {
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     backdrop-filter: blur(10px);
+}
+
+/* Destination Showcase Section */
+.destination-showcase {
+    padding: 4rem 0;
+    background: var(--bg-white);
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.destination-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 350px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.destination-overlay h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.destination-overlay p {
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 /* Filters Section */
